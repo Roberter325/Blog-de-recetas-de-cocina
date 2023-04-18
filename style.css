@@ -1,0 +1,283 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+section {
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+section nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px ;
+    z-index: 1000;
+
+}
+
+section nav .logo img {
+
+    width: 100px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+section nav ul li {
+
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+section nav ul li a {
+
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after {
+
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #54B435;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+
+    width: 100%;
+}
+
+section nav ul li a:hover {
+
+    color: #54B435;
+}
+section .main  {
+   
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 130px;
+  
+}
+section .main .main_txt h1{
+
+    font-size: 25px;
+    position: relative;
+    /* top: -90px; */
+    left: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+section .main .main_txt h1 span{
+
+    margin-left: 10px;
+    color: #54B435;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 35px;
+}
+
+section .main .main_img img {
+
+    width: 700px;
+    position: relative;
+    /* right: 300px; */
+    top: 70px;
+}
+
+/* acerca de nosotros */
+
+.sobre{
+
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0;
+}
+
+.sobre .sobre_main{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre .sobre_main .imag img{
+
+    width: 600px;
+    position: relative;
+    top: 70px;
+}
+
+.sobre .sobre_main .acerca_txt h1 span{
+
+    color: #32c900;
+    margin-right: 10px;
+    font-family: mv boli;
+}
+
+.sobre .sobre_main .acerca_txt h1{
+
+    font-size: 40px;
+    position: relative;
+    bottom: 40px;
+}
+
+.sobre .sobre_main .acerca_txt p{
+
+    width: 600px;
+    text-align: justify;
+    margin-right: 10px;
+    line-height: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* recetas */
+
+.recetas {
+    width: 100%;
+    padding: 70px 0;
+  }
+  
+  .recetas h1 {
+    margin-top: 90px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .recetas h1 span {
+    color: #583626;
+    margin-left: 15px;
+    font-family: mv boli;
+  }
+  
+  .recetas h1 span::after {
+    content: "";
+    width: 100%;
+    /* height: 1px; */
+    background: #268009;
+    display: block;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .recetas h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .recetas h2 span {
+    color: #377721;
+    margin-left: 15px;
+    font-family: mv boli;
+  }
+  
+  .recetas h2 span::after {
+    content: "";
+    width: 100%;
+    /* height: 1px; */
+    background: #32c900;
+    display: block;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .recetas .container {  
+   max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 8rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .recetas .container .card_box {
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .recetas .container .card_box .imgbox {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .recetas .container .card_box .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+  }
+  
+  .recetas .container .card_box .imgbox:hover img {
+    transform: scale(1.1);
+  }
+  
+  .recetas .container .card_box .info h3 {
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #377721;
+  }
+  
+  .recetas .container .card_box .info p {
+    text-align:justify;
+    margin-top: 10px;
+    margin: 10px;
+    line-height: 15px;
+    
+  }
+  
+  .recetas .container .card_box .info .card_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #85c785;
+    padding: 10px 30px;
+    margin: 10px;
+    transition: 0.3s;
+    
+  }
+
